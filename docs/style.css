@@ -42,11 +42,10 @@ html, body{
 	margin-top: 40px;
 }
 .function-header ~ p{
-	padding: 0 10px;
 	font-size: 1rem;
 	margin: 20px 0;
 }
-#page1::before{
+.page1::before{
 	content: "";
 	display: block;
 	position: fixed;
@@ -56,15 +55,14 @@ html, body{
 	background-size: 1200px 785.6px;
 	margin: 0 auto;
 	/*height: 1010px;*/
-	height: 785.6px;
+	height: 100%;
 	width: 100%;
 	opacity: 0.8;
 	z-index: -10;
 }
-#page1{
-		height: 785.6px;
-		width: 100%;
-		opacity: 0.8;
+.page1{
+	height: 100%;
+	width: 100%;
 }
 .logo-content{
 	display: block;
