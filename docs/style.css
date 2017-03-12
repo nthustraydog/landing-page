@@ -46,16 +46,20 @@ html, body{
 	margin: 20px 0;
 }
 #page1::before{
-	/*position: relative;*/
-		content: "";
-	  display: block;
-		position: fixed;
-		left: 0;
-  	top: 0;
-    background: url("00.png") no-repeat scroll center;
-    background-size: 1200px 785.6px;
-		margin: 0 auto;
-		/*height: 1010px;*/
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: url("00.png") no-repeat scroll center;
+	background-size: 1200px 785.6px;
+	margin: 0 auto;
+	/*height: 1010px;*/
+	height: 785.6px;
+	width: 100%;
+	opacity: 0.8;
+}
+#page1{
 		height: 785.6px;
 		width: 100%;
 		opacity: 0.8;
