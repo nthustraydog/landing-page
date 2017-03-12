@@ -45,14 +45,18 @@ html, body{
 	font-size: 1rem;
 	margin: 20px 0;
 }
-.page1::before{
+#index{
+	width: 100%;
+	height: 785.6px;
+}
+#page1::before{
 	content: "";
 	display: block;
 	position: fixed;
 	left: 0;
 	top: 0;
-	background: url("00.png") no-repeat scroll center;
-	background-size: 1200px 785.6px;
+	background: url("00.png") no-repeat scroll center top;
+	background-size: 1200px auto;
 	margin: 0 auto;
 	/*height: 1010px;*/
 	height: 100%;
@@ -60,7 +64,7 @@ html, body{
 	opacity: 0.8;
 	z-index: -10;
 }
-.page1{
+#page1{
 	height: 100%;
 	width: 100%;
 }
@@ -70,8 +74,8 @@ html, body{
   /*opacity: 0.9;*/
 	position: absolute;
 	width: 100%;
- left: 0;
-	bottom: 50px;
+  left: 0;
+	top: 50%;
 	background: rgba(255, 255, 255, 0.9);
 	/*background: #FFFFFF;*/
 }
@@ -110,6 +114,22 @@ div.dog2{
 	padding: 29% 0 0 39%;
 }
 @media screen and (max-width: 676px){
+	#page1::before{
+		background-size: 600px auto;
+	}
+	#page1{
+		height: 60%;
+	}
+	.logo-content{
+		top: 20%;
+	}
+	.logo-content img{
+		width: 25%;
+	}
+	.logo-content h1{
+		font-size: 1rem;
+		color: #000000;
+	}
 	.app-intro-container, .text-intro-container{
 		float: none;
 		text-align: center;
