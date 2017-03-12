@@ -44,6 +44,7 @@ html, body{
 .function-header ~ p{
 	font-size: 1rem;
 	margin: 20px 0;
+	padding: 0 1rem;
 }
 .page1::before{
 	content: "";
