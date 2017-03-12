@@ -93,6 +93,7 @@ div.dog2{
     text-align: center;
 }
 #page2{
+	z-index: 10;
 	background-color: #eeeeee;
 }
 .feedback {
