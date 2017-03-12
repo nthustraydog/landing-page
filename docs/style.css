@@ -115,7 +115,7 @@ div.dog2{
 }
 @media screen and (max-width: 676px){
 	#page1::before{
-		background-size: 600px auto;
+		background-size: 800px auto;
 	}
 	#page1{
 		height: 60%;
