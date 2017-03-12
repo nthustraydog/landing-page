@@ -1,4 +1,5 @@
 *{
+	box-sizing: border-box;
 	font-family: 微軟正黑體;
 	font-size: 16px;
 }
@@ -102,7 +103,7 @@ div.dog2{
 }
 .feedback {
 	width: 100%;
-	margin: 0 auto;
+	display: block;
 	cursor: pointer;
 }
 .feedback a {
