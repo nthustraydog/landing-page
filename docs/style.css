@@ -25,7 +25,7 @@ html, body{
 }
 .dog-intro{
 	/*image*/
-	width: 80%;
+	width: 90%;
 }
 .index-intro-container{
 	display: block;
@@ -40,16 +40,16 @@ html, body{
 	left: 0;
 	bottom: 5%;
 	width: 100%;
-	background: rgba(255,255,255,0.6);
+	/*background: rgba(255,255,255,0.6);*/
 }
 .index-text p{
 	display: block;
 	float: left;
-	margin: 1.5rem 1.5rem;
+	margin: 1.5rem 4rem;
 	text-align: center;
 	font-size: 2rem;
 	font-weight: bold;
-	color: #000000;
+	color: #F8FCF7;
 	cursor: pointer;
 }
 .text-intro-container{
@@ -60,10 +60,10 @@ html, body{
 	float: left;
 }
 .function-header{
-	font-size: 2.5rem;
+	font-size: 5rem;
 	color: #2A7E3A;
 }
-.function-header ~ h2{
+.function-header  h1{
 	color: #2A7E3A;
 	font-size: 2rem;
 	margin-top: 40px;
@@ -175,4 +175,63 @@ html, body{
 		left: 10%;
 		top: 42.5%;
 	}
+}
+
+#page_3{
+	background-color: #F7EDE8;
+	background-size: cover;
+	z-index: 20;
+	display: block;
+}
+
+.activity{
+	margin-top: 3rem;
+	margin-left: 5rem;
+	width: 35%
+}
+/*
+.activity_img{
+display: block;
+float: left;
+width: 40%;
+text-align: center;
+}
+*/
+.activity_word{
+width: 40%;
+display: block;
+float: right;
+/*margin-top: 300px;*/
+/*background: url('meat.png');*/
+/*background-size: cover;*/
+/*z-index: 60;*/
+}
+.activity_word h1{
+	margin-top: 300px;
+	margin-left:0;
+	font-size: 5rem;
+}
+
+.activity_word p {
+	margin-top: 0px;
+
+}
+
+#page_4{
+	background-color: #FCF7F7;
+	background-size: cover;
+	/*z-index: 30;*/
+	display: block;
+}
+
+.game{
+	margin: 6rem;
+	width: 30%;
+}
+.game_word{
+	/*margin-right: 100px;*/
+	float:right;
+	width: 45%;
+	/*background-size: cover;*/
+	/*z-index: 50;*/
 }
