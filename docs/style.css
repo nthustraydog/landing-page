@@ -45,18 +45,16 @@ html, body{
 .index-text p{
 	display: block;
 	float: left;
-	margin: 2rem 2rem;
+	margin: 1.5rem 1.5rem;
 	text-align: center;
 	font-size: 2rem;
 	font-weight: bold;
 	color: #000000;
 	cursor: pointer;
-
 }
-
 .text-intro-container{
-	margin-top: 10%;
-	padding-left: 15%;
+	margin-top: 8%;
+	padding-left: 12%;
 	width: 40%;
 	display: block;
 	float: left;
@@ -71,9 +69,8 @@ html, body{
 	margin-top: 40px;
 }
 .function-header ~ p{
-
 	text-align: justify;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	margin: 20px 0;
 }
 #index{
@@ -114,7 +111,7 @@ html, body{
 	margin: 0 auto;
 }
 .logo-content h1{
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #000000;
 }
 
@@ -139,26 +136,27 @@ html, body{
 	background: #BBC34B;
 	border: 2px solid #000000;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 	html{
 		font-size: 10px;
-	}	
+	}
 }
 @media screen and (max-width: 676px){
 	.logo-content img{
 		width: 25%;
 	}
 	.logo-content h1{
-		font-size: 1rem;
 		color: #000000;
 	}
 	.dog-intro-container, .text-intro-container{
+		margin-top: 5%;
+		padding: 0;
 		float: none;
 		text-align: center;
 		width: 100%;
 	}
 	.dog-intro{
-		width: 40%;
+		width: 80%;
 	}
 	.function-header{
 		margin: 0;
@@ -169,7 +167,7 @@ html, body{
 	.function-header ~ p{
 		margin: 5px 0 0 0;
 		padding: 1rem;
-		text-align: justify;
+		text-align: center;
 	}
 	.feedback-btn{
 		width: 80%;
