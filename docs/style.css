@@ -120,16 +120,16 @@ html, body{
 	position: absolute;
 	width: 100%;
   left: 0;
-	top: 50%;
+	top: 20%;
 	background: rgba(255, 255, 255, 0.9);
 	/*background: #FFFFFF;*/
 }
 .logo-content img{
 	margin: 0 auto;
 	animation-name: rotate;
-	animation-duration: 2s;
+	animation-duration: 3s;
 	animation-fill-mode: forwards;
-
+	width: 40%;
 }
 .logo-content h1{
 	font-size: 2rem;
@@ -247,12 +247,14 @@ float: right;
 }
 
 .game{
-	margin: 6rem;
-	width: 30%;
+	margin-top: 6rem;
+	width: 40%;
 }
 .game_word{
 	/*margin-right: 100px;*/
-	float:right;
+	float:left;
+	margin-left: 10%;
+	margin-top: 10%;
 	width: 45%;
 	/*background-size: cover;*/
 	/*z-index: 50;*/
