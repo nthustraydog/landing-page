@@ -17,40 +17,68 @@ html, body{
 	display: block;
 	clear: both;
 }
-.app-intro-container{
+.dog-intro-container{
 	display: block;
-	float: left;
-	width: 50%;
+	float: right;
+	width: 60%;
 	text-align: center;
 }
-.app-intro{
+.dog-intro{
 	/*image*/
-	margin-top: 20px;
-	width: 50%;
+	width: 80%;
 }
+.index-intro-container{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.index-pic{
+	width: 100%;
+}
+.index-text{
+	position: absolute;
+	left: 0;
+	bottom: 5%;
+	width: 100%;
+	background: rgba(255,255,255,0.6);
+}
+.index-text p{
+	display: block;
+	float: left;
+	margin: 2rem 2rem;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #000000;
+	cursor: pointer;
+
+}
+
 .text-intro-container{
-	width: 50%;
+	margin-top: 10%;
+	padding-left: 15%;
+	width: 40%;
 	display: block;
 	float: left;
 }
 .function-header{
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: #2A7E3A;
 }
 .function-header ~ h2{
 	color: #2A7E3A;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin-top: 40px;
 }
 .function-header ~ p{
-	padding-right: 2rem;
+
 	text-align: justify;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	margin: 20px 0;
 }
 #index{
 	width: 100%;
-	height: 785.6px;
+	height: 100vh;
 }
 #page1::before{
 	content: "";
@@ -59,7 +87,7 @@ html, body{
 	left: 0;
 	top: 0;
 	background: url("01.png") no-repeat scroll center top;
-	background-size: 1200px auto;
+	background-size: cover;
 	margin: 0 auto;
 	/*height: 1010px;*/
 	height: 100%;
@@ -89,43 +117,30 @@ html, body{
 	font-size: 1.5rem;
 	color: #000000;
 }
-div.dog1{
-    opacity: 0.5;
-    text-align: center;
-}
-div.dog2{
-    opacity: 0.5;
-    text-align: center;
-}
+
 #page2{
 	z-index: 10;
 	background-color: #eeeeee;
 }
 .feedback {
 	width: 100%;
+	height: 100vh;
 	display: block;
-	cursor: pointer;
+	background: url('images/bg.png') no-repeat scroll center;
+	background-size: cover;
 }
-.feedback a {
-	text-decoration: none;
+.feedback-btn{
+	position: relative;
+	left: 20%;
+	top: 40%;
+	width: 60%;
+	height: 20%;
+	font-size: 2.5rem;
+	background: #BBC34B;
+	border: 2px solid #000000;
 }
-.feedback p {
-	margin: 0;
-	color: hsl(120, 100%, 50%);
-	text-decoration: none;
-	font-size: 2rem;
-	padding: 29% 0 0 39%;
-}
+
 @media screen and (max-width: 676px){
-	#page1::before{
-		background-size: 800px auto;
-	}
-	#page1{
-		height: 60%;
-	}
-	.logo-content{
-		top: 20%;
-	}
 	.logo-content img{
 		width: 25%;
 	}
@@ -133,12 +148,12 @@ div.dog2{
 		font-size: 1rem;
 		color: #000000;
 	}
-	.app-intro-container, .text-intro-container{
+	.dog-intro-container, .text-intro-container{
 		float: none;
 		text-align: center;
 		width: 100%;
 	}
-	.app-intro{
+	.dog-intro{
 		width: 40%;
 	}
 	.function-header{
@@ -151,5 +166,19 @@ div.dog2{
 		margin: 5px 0 0 0;
 		padding: 1rem;
 		text-align: justify;
+	}
+	.feedback-btn{
+		width: 80%;
+		height: 15%;
+		left: 10%;
+		top: 42.5%;
+	}
+}
+@keyframes changecolor {
+	0%{
+		color: #2E468A;
+	}
+	100%{
+		color: #772870;
 	}
 }
