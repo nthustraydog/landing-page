@@ -139,7 +139,11 @@ html, body{
 	background: #BBC34B;
 	border: 2px solid #000000;
 }
-
+@media screen and (max-width: 1024px){
+	html{
+		font-size: 10px;
+	}	
+}
 @media screen and (max-width: 676px){
 	.logo-content img{
 		width: 25%;
@@ -172,13 +176,5 @@ html, body{
 		height: 15%;
 		left: 10%;
 		top: 42.5%;
-	}
-}
-@keyframes changecolor {
-	0%{
-		color: #2E468A;
-	}
-	100%{
-		color: #772870;
 	}
 }
