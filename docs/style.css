@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	font-family: 微軟正黑體;
 	font-size: 16px;
+	font-weight: normal;
 }
 html, body{
 	font-size: 16px;
@@ -11,6 +12,7 @@ html, body{
 }
 .container{
 	width: 100%;
+	height: 100%;
 }
 .container::after{
 	content: "";
@@ -32,46 +34,62 @@ html, body{
 	width: 100%;
 	position: relative;
 }
+.index-intro-container::before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	animation-name: darker;
+	animation-delay: 1.5s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
 .index-pic{
 	width: 100%;
 }
 .index-text{
 	position: absolute;
 	left: 0;
-	bottom: 5%;
+	top:20%;
 	width: 100%;
-	/*background: rgba(255,255,255,0.6);*/
+	animation-delay: 2s;
 }
 .index-text p{
-	display: block;
-	float: left;
-	margin: 1.5rem 4rem;
-	text-align: center;
-	font-size: 2rem;
-	font-weight: bold;
-	color: #F8FCF7;
-	cursor: pointer;
+	color: #ffffff;
+	margin: 20px 0 20px 10%;
+	font-size: 2.5rem;
 }
+.index-text a{
+	position: relative;
+	bottom: 10%;
+	margin-left: 15%;
+	padding: 20px;
+	font-size: 1rem;
+	text-decoration: none;
+	border: 2px solid #ffffff;
+}
+.index-text a:visited{
+	color: #ffffff;
+}
+
 .text-intro-container{
 	margin-top: 8%;
-	padding-left: 12%;
+	padding-left: 8%;
 	width: 40%;
 	display: block;
 	float: left;
 }
 .function-header{
-	font-size: 5rem;
 	color: #2A7E3A;
-}
-.function-header  h1{
-	color: #2A7E3A;
-	font-size: 2rem;
-	margin-top: 40px;
+	font-size: 4rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .function-header ~ p{
 	text-align: justify;
 	font-size: 1.5rem;
-	margin: 20px 0;
+	margin: 5px 0 5px 50px;
 }
 #index{
 	width: 100%;
@@ -83,8 +101,7 @@ html, body{
 	position: fixed;
 	left: 0;
 	top: 0;
-	background: url("01.png") no-repeat scroll center top;
-	background-size: cover;
+
 	margin: 0 auto;
 	/*height: 1010px;*/
 	height: 100%;
@@ -109,6 +126,10 @@ html, body{
 }
 .logo-content img{
 	margin: 0 auto;
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+
 }
 .logo-content h1{
 	font-size: 2rem;
@@ -222,6 +243,7 @@ float: right;
 	background-size: cover;
 	/*z-index: 30;*/
 	display: block;
+	height: 100vh;
 }
 
 .game{
@@ -234,4 +256,22 @@ float: right;
 	width: 45%;
 	/*background-size: cover;*/
 	/*z-index: 50;*/
+}
+@keyframes rotate {
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+			width: 0;
+			height: auto;
+		}
+}
+@keyframes  darker{
+	0%{
+		background: rgba(0,0,0,0);
+	}
+	100%{
+		background: rgba(0,0,0,0.3);
+	}
 }

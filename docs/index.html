@@ -16,31 +16,26 @@
 					<h1>Let's 狗</h1>
 				</div>
 			</div>
-
 			<div id = "page2">
 				<div class="container">
 					<div class="index-intro-container">
-						<img src="function/index-intro.jpg" class = "index-pic">
-						<div class="index-text">
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">社團簡介</p>
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">活動通知</p>
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">重要宣導</p>
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">常見問題</p>
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">校浪圖鑑</p>
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">認養專區</p>
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">事件通報</p>
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">成就名冊</p>
-							<p class = "wow animated flipInX" data-wow-delay = "0.5s">我要捐款</p>
+						<img src="function/washdog.png" class = "index-pic">
+						<div class="index-text animated fadeIn">
+							<p>Let's 狗</p>
+							<p style = "text-indent: 5rem;">與狗狗更親密</p>
+							<br><br><br><br><br>
+							<a href = "#dog">了解更多</a>
 						</div>
 					</div>
 				</div>
-				<div class = "container">
+				<div id = "dog" class = "container">
 					<div class = "dog-intro-container">
 						<img class = "dog-intro" src = "function/page_2.png" alt = "#1">
 					</div>
 					<div class = "text-intro-container">
 						<h1 class = "function-header wow animated fadeInUp">校浪圖鑑</h1>
-						<p class = "wow animated fadeInUp">路上一堆黑狗，他是誰？<br>拿出圖鑑你就是校浪大師</p>
+						<p class = "wow animated fadeInUp">路上一堆黑狗，他是誰？</p>
+						<p class = "wow animated fadeInUp" style = "text-indent: 4.5rem;">拿出圖鑑你就是校浪大師</p>
 						<h1 class = "function-header wow animated fadeInUp">預約洗澡</h1>
 						<p class = "wow animated fadeInUp">有了你，其他人能更放肆地撫摸牠</p>
 					</div>
@@ -61,7 +56,7 @@
 					<h1 class = "function-header wow animated fadeInUp">成就簿</h1>
 					<p class = "wow animated fadeInUp">● QRcode一掃，便知有沒有</p>
 					<p class = "wow animated fadeInUp">● 緣份看命，王者封號</p>
-					<h1 class = "function-header wow animated fadeInUp">集狗幣，換商品！</h1>
+					<h1 class = "function-header wow animated fadeInUp">集狗幣<br>換商品！</h1>
 				</div>
 
 			</div>
@@ -74,7 +69,9 @@
 		</div>
 		<script src = "wow.js"></script>
 		<script>
+			var page1 = document.getElementById('page1');
 			new WOW().init();
+			setTimeout(function(){page1.style.display = "none";}, 1000);
 		</script>
 	</body>
 </html>
