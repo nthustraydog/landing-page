@@ -37,6 +37,8 @@ html, body{
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
+	background: url('function/bg.jpg') no-repeat center;
+	background-size: cover;
 }
 .index-intro-container::before{
 	content: "";
@@ -45,12 +47,9 @@ html, body{
 	width: 100%;
 	height: 100%;
 	animation-name: darker;
-	animation-delay: 2s;
+	animation-delay: 5.3s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
-}
-.index-pic{
-	width: 100%;
 }
 .index-text{
 	position: absolute;
@@ -58,7 +57,7 @@ html, body{
 	top:0;
 	width: 100%;
 	height: 100%;
-	animation-delay: 2s;
+	animation-delay: 6s;
 }
 .index-text p{
 	position: relative;
@@ -280,6 +279,12 @@ background-size: cover;
 	#page_3, #page_4{
 		overflow: inherit;
 	}
+	.index-intro-container{
+		background-size: auto 100vh;
+	}
+	.index-text #know-more{
+		width: 35%;
+	}
 	.activity-pic-container, .activity_word, .game-pic-container, #page_4 .game_word{
 		width: 100%;
 		display: block;
@@ -327,10 +332,10 @@ background-size: cover;
 		text-align: center;
 	}
 	.index-text p{
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 	.index-text p:nth-child(2){
-		text-indent: 3rem;
+		text-indent: 4rem;
 	}
 	.game_word p{
 		text-indent: 0;
