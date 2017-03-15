@@ -9,7 +9,7 @@
 		<title>Let's 狗</title>
 
 	</head>
-	<body>
+	<body onload = "load()">
 		<div id = "index">
 			<div id = "page1">
 				<div class = "logo-content">
@@ -37,7 +37,7 @@
 						<br><br><br><br>
 						<h1 class = "function-header wow animated fadeInUp">預約洗澡</h1>
 						<p class = "wow animated fadeInUp">有了你，其他人能更放肆地撫摸牠</p>
-						<br><br><br><br><br><br><br><br><br><br>
+
 					</div>
 				</div>
 			</div>
@@ -49,7 +49,7 @@
 				<div class ="activity_word">
 					<h1 class = "function-header wow animated fadeInUp">活動公告</h1>
 					<p class = "wow animated fadeInUp">不能錯過的精彩活動</p>
-					<br><br><br><br><br><br><br>
+
 				</div>
 			</div>
 
@@ -78,8 +78,21 @@
 			new WOW().init();
 			var page1 = document.getElementById('page1');
 			var dog = document.getElementById("dog");
+			var text_intro_container = document.getElementsByClassName('text-intro-container')[0];
+			var dog_intro_container = document.getElementsByClassName('dog-intro-container')[0];
 			setTimeout(function(){page1.style.display = "none";}, 4500);
 
+			function load(){
+				var text_height = text_intro_container.offsetHeight;
+				var dog_height = dog_intro_container.offsetHeight;
+
+				if(window.innerWidth > 1024){
+					if(text_height > dog_height)
+						dog_intro_container.style.height = text_height + "px";
+					else
+						text_intro_container.style.height = dog_height + "px";
+				}
+			}
 
 			function runScroll() {
 			  scrollTo(document.body, dog.getBoundingClientRect().top, 1500);
