@@ -41,7 +41,7 @@ html, body{
 	width: 100%;
 	height: 100%;
 	animation-name: darker;
-	animation-delay: 1.5s;
+	animation-delay: 2.5s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
@@ -51,23 +51,33 @@ html, body{
 .index-text{
 	position: absolute;
 	left: 0;
-	top:20%;
+	top:0;
 	width: 100%;
-	animation-delay: 2s;
+	height: 100%;
+	animation-delay: 3s;
 }
 .index-text p{
+	position: relative;
+	left: 0;
+	top: 20%;
 	color: #ffffff;
 	margin: 20px 0 20px 10%;
 	font-size: 2.5rem;
 }
-.index-text a{
+.index-text #know-more{
+
 	position: relative;
-	bottom: 10%;
-	margin-left: 15%;
-	padding: 20px;
-	font-size: 1rem;
-	text-decoration: none;
+	left: 0;
+	top: 30%;
+	color: #ffffff;
+	margin: 20px 0 20px 15%;
+	font-size: 1.5rem;
+
+	padding: 5px;
 	border: 2px solid #ffffff;
+	width: 15%;
+	text-align: center;
+	cursor: pointer;
 }
 .index-text a:visited{
 	color: #ffffff;

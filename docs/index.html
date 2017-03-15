@@ -7,7 +7,7 @@
 		<link href = "style.css" rel = "stylesheet" type = "text/css">
 		<link href = "animate.css" rel = "stylesheet" type = "text/css">
 		<title>狗來了</title>
-		
+
 	</head>
 	<body>
 		<div id = "index">
@@ -23,8 +23,7 @@
 						<div class="index-text animated fadeIn">
 							<p>Let's 狗</p>
 							<p style = "text-indent: 5rem;">與狗狗更親密</p>
-							<br><br><br><br><br>
-							<a href = "#dog">了解更多</a>
+							<p id = "know-more">了解更多</p>
 						</div>
 					</div>
 				</div>
@@ -51,7 +50,7 @@
 			</div>
 
 			<div id="page_4">
-				<img class="game" src="ALBUM.png" alt="" display:"block; margin-right: 5%;">
+				<img class="game" src="function/ALBUM.png" alt="" display:"block; margin-right: 5%;">
 				<div class="game_word">
 					<h1 class = "function-header wow animated fadeInUp">成就簿</h1>
 					<p class = "wow animated fadeInUp">● QRcode一掃，便知有沒有</p>
@@ -69,9 +68,30 @@
 		</div>
 		<script src = "wow.js"></script>
 		<script>
-			var page1 = document.getElementById('page1');
 			new WOW().init();
+			var page1 = document.getElementById('page1');
+			var dog = document.getElementById("dog");
 			setTimeout(function(){page1.style.display = "none";}, 2000);
+
+
+			function runScroll() {
+			  scrollTo(document.body, dog.getBoundingClientRect().top, 1500);
+			}
+			var scrollme;
+			scrollme = document.querySelector("#know-more");
+			scrollme.addEventListener("click",runScroll,false)
+
+			function scrollTo(element, to, duration) {
+			  if (duration <= 0) return;
+			  var difference = to + element.scrollTop;
+			  var perTick = difference / duration * 10;
+
+			  setTimeout(function() {
+			    element.scrollTop = element.scrollTop + perTick;
+			    if (element.scrollTop >= 764) return;
+			    scrollTo(element, to, duration - 10);
+			  }, 10);
+			}
 		</script>
 	</body>
 </html>
