@@ -37,7 +37,9 @@ html, body{
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	background: url("./function/bg.jpg") no-repeat center;
+	background-image: url("./function/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 .index-intro-container::before{
@@ -280,7 +282,6 @@ background-size: cover;
 		overflow: inherit;
 	}
 	.index-intro-container{
-		background: url("./function/bg.jpg") no-repeat center;
 		background-size: auto 100vh;
 	}
 	.index-text #know-more{
