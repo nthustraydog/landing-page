@@ -175,7 +175,7 @@ html, body{
 	background-size: cover;
 	z-index: 20;
 	display: block;
-	overflow: auto;
+	overflow: hidden;
 }
 .activity-pic-container{
 	display: block;
@@ -211,12 +211,7 @@ background-size: cover;
 	background-size: cover;
 	/*z-index: 30;*/
 	display: block;
-	overflow: auto;
-}
-#page_4::after{
-	content: "";
-	display: block;
-	clear: both;
+	overflow: hidden;
 }
 
 .game{
