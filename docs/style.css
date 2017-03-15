@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 *{
 	box-sizing: border-box;
 	font-family: 微軟正黑體;
@@ -9,6 +10,7 @@ html, body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
+
 }
 .container{
 	width: 100%;
@@ -41,7 +43,7 @@ html, body{
 	width: 100%;
 	height: 100%;
 	animation-name: darker;
-	animation-delay: 2.5s;
+	animation-delay: 2s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
@@ -54,7 +56,7 @@ html, body{
 	top:0;
 	width: 100%;
 	height: 100%;
-	animation-delay: 3s;
+	animation-delay: 2s;
 }
 .index-text p{
 	position: relative;
@@ -64,18 +66,21 @@ html, body{
 	margin: 20px 0 20px 10%;
 	font-size: 2.5rem;
 }
+.index-text p:nth-child(2){
+	text-indent: 5rem;
+}
 .index-text #know-more{
 
 	position: relative;
 	left: 0;
-	top: 30%;
+
 	color: #ffffff;
 	margin: 20px 0 20px 15%;
 	font-size: 1.5rem;
 
 	padding: 5px;
 	border: 2px solid #ffffff;
-	width: 15%;
+	width: 20%;
 	text-align: center;
 	cursor: pointer;
 }
@@ -128,53 +133,29 @@ html, body{
 }
 .logo-content{
 	display: block;
-	text-align: center;
   /*opacity: 0.9;*/
 	position: absolute;
 	width: 100%;
   left: 0;
 	top: 20%;
 	background: rgba(255, 255, 255, 0.9);
+	text-align: center;
 	/*background: #FFFFFF;*/
 }
 .logo-content img{
-	margin: 0 auto;
+	position: relative;
+	left: 0%;
 	animation-name: rotate;
-	animation-duration: 3s;
+	animation-duration: 5s;
 	animation-fill-mode: forwards;
 	width: 40%;
-}
-.logo-content h1{
-	font-size: 2rem;
-	color: #000000;
 }
 
 #page2{
 	z-index: 10;
 	background-color: #eeeeee;
 }
-.feedback {
-	width: 100%;
-	height: 100vh;
-	display: block;
-	opacity: 0.8;
-}
-.feedback-btn{
-	position: relative;
-	left: 8%;
-	top: 40%;
-	margin-left: 28%;
-	margin-right: 47%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: lightblue;
-}
 
-.feedback-btn a{
-	text-decoration: none;
-	font-size: 2.5rem;
-	font-family: 'Bree Serif', serif;
-}
 
 .meat{
 	float:left;
@@ -186,20 +167,141 @@ html, body{
 	display: block;
 	margin-top: 21%;
 }
+#page_3{
+	background-color: #F7EDE8;
+	background-size: cover;
+	z-index: 20;
+	display: block;
+	overflow: auto;
+}
+.activity-pic-container{
+	display: block;
+	float: left;
+	padding-top: 3rem;
+	padding-left: 5rem;
+	width: 35%;
+}
+.activity{
+	width: 100%;
+}
+.activity_word{
+width: 65%;
+display: block;
+float: left;
+padding-left: 20%;
+background: url("function/egg1.png") no-repeat;
+background-size: cover;
+}
+.activity_word h1{
+	margin-top: 250px;
+	margin-left:0;
+	font-size: 5rem;
+}
 
+.activity_word p {
+	margin-top: 0px;
 
+}
 
+#page_4{
+	background-color: #FCF7F7;
+	background-size: cover;
+	/*z-index: 30;*/
+	display: block;
+	overflow: auto;
+}
+#page_4::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.game{
+	width: 80%;
+}
+.game-pic-container{
+	display: block;
+	float: right;
+	width: 55%;
+	text-align: center;
+}
+.game_word{
+	/*margin-right: 100px;*/
+	float: right;
+	padding-left: 8%;
+	margin-left: 0%;
+	margin-top: 6rem;
+	width: 45%;
+	background: url("function/ting6.png");
+	background-size: cover;
+	display: block;
+}
+
+.game_word h1, .game_word p{
+	margin-left: 10%;
+}
+.game_word p{
+	text-indent: 4.5rem;
+}
+.feedback{
+	padding-top: 50vh;
+	width: 100%;
+	height: 100vh;
+	display: block;
+	background: url('function/bg.png') no-repeat center;
+	background-size: cover;
+}
+.feedback-btn{
+	position: relative;
+	display: block;
+	border: 4px solid #aaaaaa;
+	border-bottom: 8px solid #aaaaaa;
+	border-radius: 1rem;
+	font-size: 3.5rem;
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 1rem;
+	cursor: pointer;
+	background: #dddddd;
+}
+.feedback-btn:active{
+	top: 4px;
+	border-bottom: 4px solid #aaaaaa;
+}
 @media screen and (max-width: 1024px) {
 	html{
 		font-size: 10px;
 	}
 }
 @media screen and (max-width: 676px){
-	.logo-content img{
-		width: 25%;
+	#page_3, #page_4{
+		overflow: inherit;
 	}
-	.logo-content h1{
-		color: #000000;
+	.activity-pic-container, .activity_word, .game-pic-container, #page_4 .game_word{
+		width: 100%;
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	.activity-pic-container{
+		padding-left: 0;
+	}
+	.activity_word{
+		padding: 0;
+	}
+	.activity_word h1{
+		margin: 20px;
+	}
+	.activity{
+		width: 60%;
+	}
+	.game_word{
+		margin: 0;
+		padding: 0;
+	}
+	.game_word h1{
+		margin-left: 0;
 	}
 	.dog-intro-container, .text-intro-container{
 		margin-top: 5%;
@@ -222,90 +324,34 @@ html, body{
 		padding: 1rem;
 		text-align: center;
 	}
-	.feedback-btn{
-		width: 80%;
-		height: 15%;
-		left: 10%;
-		top: 42.5%;
+	.index-text p{
+		font-size: 2rem;
 	}
-}
-
-#page_3{
-	background-color: #F7EDE8;
-	background-size: cover;
-	z-index: 20;
-	display: block;
-}
-
-.activity{
-	margin-top: 3rem;
-	margin-left: 5rem;
-	width: 35%
-}
-/*
-.activity_img{
-display: block;
-float: left;
-width: 40%;
-text-align: center;
-}
-*/
-.activity_word{
-width: 40%;
-display: block;
-float: right;
-width: 40%;
-display: block;
-float: right;
-margin-top: 20px;
-background: url("function/egg1.png") no-repeat;
-background-size: cover;
-}
-.activity_word h1{
-	margin-top: 300px;
-	margin-left:0;
-	font-size: 5rem;
-}
-
-.activity_word p {
-	margin-top: 0px;
-
-}
-
-#page_4{
-	background-color: #FCF7F7;
-	background-size: cover;
-	/*z-index: 30;*/
-	display: block;
-	height: 100vh;
-}
-
-.game{
-	margin-top: 6rem;
-	width: 35%;
-	margin-left: 13%;
-	margin-right: 7%;
-}
-.game_word{
-	/*margin-right: 100px;*/
-	float:left;
-	margin-left: 0%;
-	margin-top: 6rem;
-	width: 45%;
-	background: url("function/ting6.png");
-	background-size: cover;
-	display: block;
-}
-
-.game_word h1,p{
-	margin-left: 10%;
+	.index-text p:nth-child(2){
+		text-indent: 3rem;
+	}
+	.game_word p{
+		text-indent: 0;
+	}
+	.feedback-btn{
+		font-size: 2.5rem;
+	}
 }
 
 @keyframes rotate {
 		0%{
+			left: -40%;
+			width: 40%;
+		}
+		70%{
+			left: 0%;
+			width: 40%;
+			transform-origin: 50% 50%;
 			transform: rotate(0deg);
 		}
 		100%{
+			left: 0%
+			transform-origin: 50% 50%;
 			transform: rotate(360deg);
 			width: 0;
 			height: auto;
