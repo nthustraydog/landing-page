@@ -34,7 +34,9 @@ html, body{
 .index-intro-container{
 	display: block;
 	width: 100%;
+	height: 100vh;
 	position: relative;
+	overflow: hidden;
 }
 .index-intro-container::before{
 	content: "";
