@@ -103,12 +103,11 @@ html, body{
 	padding-top: 8%;
 	padding-left: 8%;
 	width: 40%;
-	height: 60%;
 	display: block;
 	float: left;
 	background: url("function/yoyo1.png") no-repeat;
 	background-size: 80%;
-	background-position: center;
+	background-position: center top;
 }
 .function-header{
 	color: #2A7E3A;
@@ -334,7 +333,7 @@ background-size: cover;
 		width: 100%;
 	}
 	.text-intro-container{
-		height: 60vh;
+		height: auto;
 	}
 	.dog-intro{
 		width: 80%;
