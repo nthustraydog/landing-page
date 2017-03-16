@@ -108,6 +108,7 @@ html, body{
 	float: left;
 	background: url("function/yoyo1.png") no-repeat;
 	background-size: 80%;
+	background-position: center;
 }
 .function-header{
 	color: #2A7E3A;
@@ -195,22 +196,29 @@ html, body{
 	width: 100%;
 }
 .activity_word{
-width: 65%;
+width: 45%;
+height: 100%;
 display: block;
 float: left;
 padding-left: 20%;
+margin-top: 100px;
+margin-left: 100px;
 background: url("function/egg1.png") no-repeat;
 background-size: cover;
+
+/*background-position: center;*/
 }
 .activity_word h1{
 	margin-top: 250px;
-	margin-left:0;
+	margin-left:-10%;
 	font-size: 5rem;
+/*text-align: center;*/
+	/*margin-bottom: 300px;*/
 }
 
 .activity_word p {
 	margin-top: 0px;
-
+/*text-align: center;*/
 }
 
 #page_4{
