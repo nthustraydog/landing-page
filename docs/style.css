@@ -182,6 +182,7 @@ html, body{
 	margin-top: 21%;
 }
 #page_3{
+	position: relative;
 	background-color: #F7EDE8;
 	background-size: cover;
 	z-index: 20;
@@ -191,6 +192,9 @@ html, body{
 	height: 100vh;
 }
 .activity-pic-container{
+	position: relative;
+	left:0;
+	bottom: 0;
 	display: block;
 	float: left;
 	padding-top: 3rem;
@@ -198,10 +202,11 @@ html, body{
 	width: 35%;
 }
 .activity{
-	width: 100%;
+	height: 100vh;
 }
 .activity_word{
 width: 45%;
+height: 70%;
 display: block;
 float: left;
 padding-left: 20%;
@@ -273,7 +278,6 @@ background-size: cover;
 .feedback-btn{
 	position: relative;
 	display: block;
-	border: 4px solid #aaaaaa;
 	border-bottom: 8px solid #aaaaaa;
 	border-radius: 1rem;
 	font-size: 3.5rem;
@@ -283,16 +287,16 @@ background-size: cover;
 	padding: 1rem;
 	cursor: pointer;
 	background: #dddddd;
+	font-family: cursive;
 }
 .feedback-btn:hover{
-	background: #D1758E;
-	border: 4px solid #8E2F61;
-	border-bottom: 8px solid #8E2F61;
+	color: #ffffff;
+	background:  #D34A73;
+	border-bottom: 8px solid #942444;
 }
-.feedback-btn:hover
 .feedback-btn:active{
 	top: 4px;
-	border-bottom: 4px solid #8E2F61;
+	border-bottom: 4px solid #942444;
 }
 @media screen and (max-width: 676px) {
 
@@ -323,13 +327,16 @@ background-size: cover;
 	}
 	.activity_word{
 		padding: 0;
+		padding-top: 10%;
 		margin: 0;
+		height: 300px;
 	}
 	.activity_word h1{
 		margin: 20px;
 	}
 	.activity{
 		width: 40%;
+		height: auto;
 	}
 	.game_word{
 		margin: 0;
@@ -346,6 +353,7 @@ background-size: cover;
 	}
 	.text-intro-container{
 		height: auto;
+		padding-bottom: 10%;
 	}
 	.dog-intro{
 		width: 80%;
