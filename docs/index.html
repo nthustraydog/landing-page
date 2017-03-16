@@ -82,6 +82,10 @@
 			var dog_intro_container = document.getElementsByClassName('dog-intro-container')[0];
 			setTimeout(function(){page1.style.display = "none";}, 4500);
 
+			window.onresize = function(){
+				load();
+			}
+
 			function load(){
 				var text_height = text_intro_container.offsetHeight;
 				var dog_height = dog_intro_container.offsetHeight;
@@ -91,6 +95,10 @@
 						dog_intro_container.style.height = text_height + "px";
 					else
 						text_intro_container.style.height = dog_height + "px";
+				}
+				else{
+					dog_intro_container.style.height = "auto";
+					text_intro_container.style.height = "auto";
 				}
 			}
 
