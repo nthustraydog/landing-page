@@ -62,7 +62,7 @@ html, body{
 	animation-fill-mode: forwards;
 }
 .index-intro-pic{
-	background-image: url("./function/background.jpg");
+	background-image: url("./function/background.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
