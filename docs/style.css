@@ -48,6 +48,7 @@ html, body{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	z-index: 20;
 }
 .index-intro-container::before{
 	content: "";
