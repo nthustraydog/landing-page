@@ -44,11 +44,10 @@ html, body{
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-	/*background-image: url("./function/background.jpg");
+	background-image: url("./function/background.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	z-index: 20;*/
 }
 .index-intro-container::before{
 	content: "";
@@ -285,9 +284,15 @@ background-size: cover;
 	cursor: pointer;
 	background: #dddddd;
 }
+.feedback-btn:hover{
+	background: #D1758E;
+	border: 4px solid #8E2F61;
+	border-bottom: 8px solid #8E2F61;
+}
+.feedback-btn:hover
 .feedback-btn:active{
 	top: 4px;
-	border-bottom: 4px solid #aaaaaa;
+	border-bottom: 4px solid #8E2F61;
 }
 @media screen and (max-width: 676px) {
 
@@ -366,7 +371,7 @@ background-size: cover;
 		text-indent: 0;
 	}
 	.feedback-btn{
-		font-size: 2.5rem;
+		font-size: 3rem;
 	}
 }
 
